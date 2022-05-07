@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <!-- Styles-->
+        <link rel="stylesheet" type="text/css" href="./css/libs.css" />
+        <link rel="stylesheet" type="text/css" href="./vendor/fontawesome-pro/css/all.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/app.css" />
+        <!-- Scripts-->
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="container py-5">
+            <button class="btn btn-primary me-4" type="button" data-bs-toggle="modal" data-bs-target="#popup-post">Open Post</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#popup-video">Open Videos</button>
+            <div class="popup modal fade" id="popup-post" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Khoa du lịch</h4>
+                            <button class="close" type="button" data-bs-dismiss="modal"><i class="fal fa-times"></i></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="popup__frame ratio ratio-16x9">
+                                <iframe src="./post.html" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup modal fade" id="popup-video" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Khoa du lịch</h4>
+                            <button class="close" type="button" data-bs-dismiss="modal"><i class="fal fa-times"></i></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="popup__frame ratio ratio-16x9">
+                                <iframe src="./videos.html" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
